@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>8K PRODUCTIONS</title>
+	<link rel="icon" type="image/png" href="socialmedia/instaram.png">
+	<link type="text/css" rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content= "width= device-width, initial-scale=1.0">
+</head>
+<body>
+	
+
+	<!--video background-->
+	<video id="bgvid" autoplay poster="socialmedia/emma.jpg" controls muted loop>
+		<source src="socialmedia/beautyandbeast.mp4" type="video/mp4">
+	</video>
+				<!--Glass Box-->
+	<div class="header glass">
+	 
+	</div>
+
+	<div id="container">
+		<!--meashes-->
+		<div id= "mesh">
+			  <!-- particles.js container -->
+			<div id="particles-js"></div>
+
+			<!-- stats - count particles -->
+			<div class="count-particles">
+			  <span class="js-count-particles"></span>
+			</div>
+				</div>
+			<!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js -->
+  			<script src='js/shape.js'></script>
+
+    		<script src="js/index.js"></script>
+    	</div>
+
+		<!--Logo-->
+		<div id= "logo">
+			<h2> 8K PRODUCTIONS </h2>
+		</div>
+		<div id = "symbol">
+			<img src="socialmedia/GoogleMusic.webp" alt="facebook">
+		</div>
+		<!--Timer-->
+		<div id= "timer">
+					<!-- Display the countdown timer in an element -->
+			<p id="demo"></p>
+
+			<script>
+				// Set the date we're counting down to
+				var countDownDate = new Date("Aug 9, 2017 15:37:25").getTime();
+
+				// Update the count down every 1 second
+				var x = setInterval(function() {
+
+				  // Get todays date and time
+				  var now = new Date().getTime();
+
+				  // Find the distance between now an the count down date
+				  var distance = countDownDate - now;
+
+				  // Time calculations for days, hours, minutes and seconds
+				  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				  // Display the result in the element with id="demo"
+				  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+				  + minutes + "m " + seconds + "s ";
+
+				  // If the count down is finished, write some text 
+				  if (distance < 0) {
+				    clearInterval(x);
+				    document.getElementById("demo").innerHTML = "EXPIRED";
+				  }
+				}, 1000);
+			</script>
+		</div>
+		
+		<div id="coming">
+		<h1>COMING SOON</h1>
+	</div>
+	<section id="left-column">
+
+	<!--Social Media-->
+	<div id= "media">
+	<a href="https://www.facebook.com//">
+		<img src="socialmedia/facebook.png" alt="facebook">
+	</a>
+	<a href="https://www.instagram.com/">
+		<img src="socialmedia/instagram1.png" alt="Instagram">
+	</a>
+	<a href="https://twitter.com/">
+		<img src="socialmedia/Twitter.png" alt="Twitter">
+	</a>
+	</div>
+		
+		</section>
+	</div>
+
+	
+	
+</body>
+</html>
